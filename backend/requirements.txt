@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+pydantic
+pydantic[email]
+
+sqlalchemy
+
+passlib[bcrypt]
+
+python-multipart
+
+reportlab
+
+pytest
+httpx
+
+python-dotenv
