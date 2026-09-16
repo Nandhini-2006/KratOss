@@ -1,0 +1,7 @@
+.env
+__pycache__/
+*.pyc
+kratos.db
+storage/scanned_repositories/*
+storage/generated_reports/*
+storage/temporary_files/*s

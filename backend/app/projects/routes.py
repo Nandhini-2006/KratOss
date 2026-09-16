@@ -1,10 +1,11 @@
 from fastapi import APIRouter, HTTPException
 
-from .models import ProjectCreate
+from .models import ProjectCreate, ProjectUpdate
 from .service import (
     create_project,
     get_projects,
     get_project,
+    update_project,
     delete_project
 )
 
@@ -46,6 +47,23 @@ def project_details(project_id: int):
         )
 
     return project
+
+
+@router.put("/{project_id}")
+def edit_project(project_id: int, project: ProjectUpdate):
+
+    updated_project = update_project(project_id, project)
+
+    if updated_project is None:
+        raise HTTPException(
+            status_code=404,
+            detail="Project not found"
+        )
+
+    return {
+        "message": "Project updated successfully",
+        "project": updated_project
+    }
 
 
 @router.delete("/{project_id}")
