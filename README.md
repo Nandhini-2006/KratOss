@@ -14,7 +14,7 @@
 
 <br/>
 
-## ✨ Features
+##  Features
 
 <img align="right" width="300" src="https://assets.website-files.com/62ccaa913b83d1c448d3db80/630234a905a5fc3a2de524e4_API%20Management%20Platform.gif" alt="API Animation">
 
@@ -26,7 +26,7 @@
 
 <br/>
 
-## 🛠️ Getting Started
+##  Getting Started
 
 ### Prerequisites
 - Python 3.8+
